@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="216dp"
+    android:layout_marginRight="12dp"
+    android:layout_height="170dp">
+
+    <androidx.cardview.widget.CardView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="131dp">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.nixo.afterworklife.Utils.View.RaduisImageView
+                android:id="@+id/civ_head"
+                android:src="@mipmap/test_bg"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--    color_515151-->
+
+
+
+            <TextView
+                android:text="限时 ￥9.9"
+                android:textSize="15dp"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:background="@mipmap/group_zhaomu"
+                android:layout_width="90dp"
+                android:layout_height="30dp"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:textSize="19dp"
+        android:singleLine="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:text="摄影团单反相机活动"
+        android:textColor="#2f2f2f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+

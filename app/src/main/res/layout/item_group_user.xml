@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:orientation="vertical"
+        android:src="@mipmap/plus"
+        android:id="@+id/civ_head"
+        android:layout_marginLeft="13dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/color_ff5e41"
+        android:layout_marginBottom="4dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+</LinearLayout>

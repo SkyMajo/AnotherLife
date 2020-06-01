@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_jump"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_head"
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_name"
+            android:text="Nixo"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+<TextView
+    android:id="@+id/tv_flowed"
+    android:background="@drawable/circle_ret_orange"
+    android:text="+关注"
+    android:visibility="gone"
+    android:gravity="center"
+    android:textColor="@color/color_white"
+    android:layout_width="61dp"
+    android:layout_height="24dp"/>
+    <TextView
+        android:id="@+id/tv_unflow"
+        android:background="@drawable/d3d3d3_raduis5_stroke"
+        android:text="已关注"
+        android:gravity="center"
+        android:textColor="@color/color_9d9d9d"
+        android:layout_width="61dp"
+        android:layout_height="24dp"/>
+
+</LinearLayout>

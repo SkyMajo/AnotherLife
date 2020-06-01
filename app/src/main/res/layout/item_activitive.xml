@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="11dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:elevation="1dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="183dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/activity_test"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="城市中的森林"
+            android:paddingRight="13dp"
+            android:textSize="16dp"
+            android:maxLines="2"
+            android:textColor="@color/color_2f2f2f"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_local"
+            android:text="地点:陆家嘴国家绿地"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="35dp"
+            android:drawableLeft="@mipmap/location"
+            android:drawablePadding="4dp"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:textColor="@color/color_7c7c7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="免费"
+            android:background="@mipmap/raduis_right_yellow"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_join"
+            android:src="@mipmap/join"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ebf4fc_raduis11_full"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/tv_group"
+                android:text="大自然社团"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/blue_scrip"
+                android:textColor="#3394f8"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

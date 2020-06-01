@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+    android:visibility="gone"
+    android:background="@color/color_white"
+    android:id="@+id/ll_unlogin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/un_login"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:text="您当前尚未登录\n请您登录后查看"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="#A80C0C0C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_to_login"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:background="@drawable/oragon_raduis8_full"
+            android:text="立刻登陆"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>

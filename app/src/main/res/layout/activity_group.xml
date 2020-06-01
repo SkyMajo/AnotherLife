@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    tools:context=".GroupPage.GroupActivity.CreateGroupActivity">
+
+
+    <include layout="@layout/include_titlebar"/>
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/plus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:text="点击选择社团头像.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_name"
+        android:textSize="16dp"
+        android:textColor="@color/color_020202"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="请输入社团名"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/et_description"
+        android:textSize="16dp"
+        android:textColor="@color/color_020202"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="请输入社团简介"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_logo"
+        android:textSize="16dp"
+        android:textColor="@color/color_020202"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="请输入社团公告"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_max_member"
+        android:textSize="16dp"
+        android:maxLength="3"
+        android:textColor="@color/color_020202"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="请输入社团最多人数"
+        android:inputType="number"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

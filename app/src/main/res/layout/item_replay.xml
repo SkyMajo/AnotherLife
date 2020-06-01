@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_marginLeft="8dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="15dp"
+        android:text="李阿姨啊"
+        android:textColor="@color/color_5e5e5e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/id_l"
+        android:text="1L"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_marginLeft="66dp"
+        android:textSize="15dp"
+        android:textColor="@color/color_969696"
+        android:text="这奶昔怎么卖？还是奶油蘑菇汤好喝"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="9dp"
+        android:id="@+id/tv_time"
+        android:textSize="12dp"
+        android:textColor="@color/color_969696"
+        android:text="2019年11月21日11:43:34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginTop="8dp"
+        android:background="@color/color_f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

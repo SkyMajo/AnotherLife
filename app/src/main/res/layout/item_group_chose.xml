@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_choose"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_height="60dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_head"
+        android:layout_gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:text="AYAYA"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/civ_head"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginBottom="3dp"
+        android:textSize="13dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/color_515151"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

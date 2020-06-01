@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_height="match_parent"
+    tools:context=".ActivitePage.Activity.ActiviteManagerActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_weight="1"
+            android:layout_marginLeft="13dp"
+            android:text="活动管理"
+            android:textSize="16dp"
+            android:drawablePadding="7dp"
+            android:drawableLeft="@mipmap/left_enter"
+            android:textColor="@color/color_121212"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_create"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="13dp"
+            android:text="创建活动"
+            android:singleLine="true"
+            android:textSize="13dp"
+            android:drawablePadding="7dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/red_raduis5_full"
+            android:textColor="@color/color_white"
+            android:layout_width="150dp"
+            android:layout_height="28dp"/>
+    </LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrv_group_activite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

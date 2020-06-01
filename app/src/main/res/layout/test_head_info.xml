@@ -1,0 +1,176 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    tools:context=".DynamicsInfo.Activity.DynamicsInfoActivity">
+    <View
+        android:id="@+id/v_bg"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="bottom"
+        android:background="#128B8A8A"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/ll_tools"
+        android:layout_below="@+id/v_bg"
+        android:orientation="vertical"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_user_avatar"
+                android:src="@mipmap/mrli_test_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:text="最帅李大婶"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_2a2a2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_time_pre"
+                    android:text="4小时前"
+                    android:textSize="12dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/color_848484"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_follow"
+                android:layout_gravity="center_vertical"
+                android:text="关注"
+                android:src="@mipmap/flow_new"
+                android:textSize="12dp"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="35dp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_content"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="今天去了北海道，旅游啦，风景非常美，风景不错"
+            android:textStyle="bold"
+            android:textColor="@color/color_181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <RelativeLayout
+                android:id="@+id/rl_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+                <RelativeLayout
+                    android:id="@+id/rv_video"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:id="@+id/iv_video"
+                        android:padding="70dp"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                    <ImageView
+                        android:src="@mipmap/player_start"
+                        android:padding="70dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <com.lzy.ninegrid.NineGridView
+                android:id="@+id/iv_img"
+
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/fff30f_raduis16_full"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="旅游社团"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@mipmap/red_scrip"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/color_f25531"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_address"
+                android:text="闵行"
+                android:textSize="13dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/location"
+                android:textColor="@color/color_acacac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

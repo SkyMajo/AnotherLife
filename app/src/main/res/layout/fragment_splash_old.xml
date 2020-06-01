@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="75dp"
+        android:text="@string/old_sex"
+        android:textColor="@color/color_020202"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="13dp"
+        android:textColor="#555"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="58dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_gril"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_gril"
+                android:src="@mipmap/gril_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="女"
+                android:textSize="20dp"
+                android:textColor="@color/color_020202"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_boy"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_boy"
+                android:src="@mipmap/boy_unselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="男"
+                android:textSize="20dp"
+                android:textColor="@color/color_020202"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+/>
+        </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.nixo.afterworklife.Utils.Wheel.WheelView
+            android:id="@+id/www1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.nixo.afterworklife.Utils.Wheel.WheelView
+            android:id="@+id/www2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.nixo.afterworklife.Utils.Wheel.WheelView
+            android:id="@+id/www3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/ll_next"
+    android:gravity="center"
+    android:layout_marginTop="55dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:drawableTop="@mipmap/next_down"
+        android:layout_width="wrap_content"
+        android:text="下一步"
+        android:textSize="15dp"
+        android:textColor="@color/color_121212"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</LinearLayout>

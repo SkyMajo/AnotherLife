@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.core.widget.NestedScrollView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--    tools:context=".DynamicsInfo.Activity.DynamicsInfoActivity"-->
+<!--    tools:showIn="@layout/activity_dynamics_info"-->
+<!--    android:background="@color/color_white"-->
+<!--    >-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DynamicsInfo.Activity.DynamicsInfoActivity"
+    tools:showIn="@layout/activity_dynamics_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_yileina"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_below="@+id/v_bg"
+        android:id="@+id/stl_dynamics"
+        android:layout_weight="1"
+        app:tl_indicator_color="@color/color_535353"
+        app:tl_textSelectColor="@color/color_242424"
+        app:tl_textBold="SELECT"
+        app:tl_textsize="18dp"
+        app:tl_underline_color="@color/color_f25531"
+        app:tl_indicator_corner_radius="5dp"
+        app:tl_textUnselectColor="@color/color_535353"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/stl_dynamics"
+        android:id="@+id/vp_stl_dynamics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+    <!--</androidx.core.widget.NestedScrollView>-->
+

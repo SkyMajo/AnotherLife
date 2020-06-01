@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/color_white"
+            android:layout_marginRight="8dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/raduis5_huise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:drawableLeft="@mipmap/search_input"
+                    android:drawablePadding="8dp"
+                    android:textSize="16dp"
+                    android:text="搜索你感兴趣的内容"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_message"
+                    android:src="@mipmap/message2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginLeft="30dp"
+                    android:visibility="gone"
+                    android:id="@+id/v_msg"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/red_point"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:background="#f9f9f9"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_222222"
+                android:text="限时抢购"
+                android:layout_marginLeft="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="0"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/enter_right"
+                android:textColor="@color/color_666666"
+                android:textSize="12dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/f83ae6_raduis8_full"
+                android:layout_width="26dp"
+                android:layout_height="15dp"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/enter_right"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/enter_right"
+                android:layout_marginRight="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_wqhd"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:id="@+id/ll_no_josin"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                    <TextView
+                        android:gravity="center"
+                        android:text="当前暂无限时抢购"
+                        android:textSize="18dp"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_unlogin"
+                    android:gravity="center"
+                    android:layout_marginRight="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:text="请登录后查看更多内容"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:background="@drawable/oragon_raduis8_full"
+                        android:text="登陆"
+                        android:gravity="center"
+                        android:textColor="@color/color_white"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.nixo.afterworklife.Utils.RecyclerView.SustainRecyclerView
+                android:id="@+id/rv_activite_review"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="29dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@color/color_222222"
+                    android:text="招募活动"
+                    android:gravity="center"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:text="往期活动"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/enter_right_all"
+                    android:textColor="@color/color_222222"
+                    android:textSize="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="26dp"
+                    android:layout_height="15dp"/>
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/enter_right_all"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/enter_right"
+                    android:layout_marginRight="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/rv_location"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
+

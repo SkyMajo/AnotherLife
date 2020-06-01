@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="45dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Welcome.View.Activity.PhoneLoginActivity">
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <ImageView
+        android:layout_marginLeft="13dp"
+        android:src="@mipmap/left_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="手机号登陆"
+        android:textSize="19dp"
+        android:textColor="#121212"
+        android:layout_marginLeft="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_marginTop="25dp"
+            android:hint="输入手机号"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_marginTop="25dp"
+                android:hint="输入验证码"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/tv_send_code"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textColor="@color/color_ff5e41"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ff5e41_raduis14_stroke_white_bg"
+                android:text="获取验证码"
+                android:layout_width="99dp"
+                android:layout_height="27dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="34dp"
+            android:id="@+id/register"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

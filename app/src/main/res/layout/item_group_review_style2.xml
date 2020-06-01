@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="95dp"
+    android:layout_marginRight="13dp"
+    android:layout_height="120dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_head"
+        android:layout_centerHorizontal="true"
+        android:layout_width="69dp"
+        android:layout_height="69dp"/>
+<!--    color_515151-->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:text="AYAYA"
+        android:layout_below="@+id/civ_head"
+        android:layout_marginTop="14dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginBottom="3dp"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:textColor="@color/color_515151"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/iv_msg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/new_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_tf_end"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/tf_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

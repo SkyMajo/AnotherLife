@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitePage.Activity.SendActivieActivity">
+
+    <include layout="@layout/include_titlebar"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:hint="请输入文字.."
+        android:gravity="left|top"
+        android:padding="7dp"
+        android:background="@color/color_f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <RelativeLayout
+        android:background="@color/color_f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:background="@drawable/blue_raduis5_all"
+            android:id="@+id/tv_group"
+            android:layout_marginLeft="13dp"
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:text="请选择社团"
+            android:layout_height="35dp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_photo_j"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"/>
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+            android:visibility="visible"
+            android:id="@+id/iv_video_j"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_photo_review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
